@@ -1,0 +1,395 @@
+/* General styling */
+.home-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.book-button, .book-button-main {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover, .book-button-main:hover {
+    background-color: #ff9800;
+}
+
+.main-content {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bus-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Moving Bus Animation */
+.bus-animation {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    overflow: hidden;
+    height: 150px;
+}
+
+.moving-bus {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    animation: moveBus 20s linear infinite;
+}
+
+@keyframes moveBus {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+/* Search Bar in Header */
+.search-container-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.contact-class {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.contact-class a {
+    text-decoration: none;
+    color: #ddd;
+    display: flex;
+    align-items: center; /* Aligns text with icons */
+    transition: color 0.3s ease;
+}
+
+.contact-class a:hover {
+    color: #4a90e2; /* Changes text and icon color on hover */
+}
+
+
+
+
+.location-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: #4a90e2;
+}
+
+.search-input-header {
+    padding: 10px 10px 10px 35px; /* space for icon */
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.search-results-header {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.search-container-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.location-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    color: #4a90e2;
+}
+
+.search-input-header {
+    padding: 10px 10px 10px 35px; /* space for icon */
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Initially hide search results */
+.search-results-header {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(116, 113, 113);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+/* Show search results when hovering over search input or search results */
+.search-container-header:hover .search-results-header,
+.search-input-header:focus + .search-results-header {
+    display: block;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-result-item:hover {
+    background-color: #f09e9e;
+}
+
+/* Customer Reviews Section */
+.customer-reviews {
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.customer-reviews h2 {
+    font-size: 28px;
+    color: #0056b3;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.review-icon {
+    width: 100px;          /* Adjust the size of the image */
+    height: 100px;         /* Keep it square to ensure the circle */
+    border-radius: 50%;    /* Makes the image circular */
+    object-fit: cover;     /* Ensures the image scales without distortion */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-rating {
+    font-size: 16px;
+    color: #f39c12;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.review-author {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0073e6;
+    text-align: right;
+}
+
+
+/* FAQ Section */
+.faq-section {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.faq-buttons {
+    margin-bottom: 20px;
+}
+
+.faq-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.faq-btn.active {
+    background-color: #ff5252;
+}
+
+.faq-container {
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
+.faq-icon {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Milestones Section */
+.milestones-section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.milestones-section h2 {
+    font-size: 28px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.milestones-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.milestones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.milestone {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.milestone img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.milestone h3 {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.milestone p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}

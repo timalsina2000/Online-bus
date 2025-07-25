@@ -1,0 +1,188 @@
+/* General Post Container Styles */
+.posts-container {
+  margin-top: 20px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Card Styles */
+.posts-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* All Post Header */
+.all-post {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Post Item Styles */
+.post-item {
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+.post-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+
+/* Button Styles */
+.view-button {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  margin-top: 0.5rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #e88e00;
+}
+
+/* Seat Button Styles */
+.seat-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.seat-button {
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.seat-button.booked {
+  background-color: #e0e0e0;
+  color: #777;
+  cursor: not-allowed;
+}
+
+.seat-button.selected {
+  background-color: #ff9800;
+  color: white;
+}
+
+.seat-button:not(.booked):hover {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+/* Bus Details */
+.bus-details {
+  margin-top: 10px;
+}
+
+.bus-number-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bus-number-row {
+  font-size: 1rem;
+  color: #555;
+}
+
+.total-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.modal-header {
+  background-color: #ff9800;
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-footer .btn-primary {
+  background-color: #ff9800;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #e88e00;
+}
+
+.bus-details h5 {
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Input Styles */
+.form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #ff9800;
+  box-shadow: 0px 0px 5px rgba(255, 152, 0, 0.4);
+}
+
+.form-feedback {
+  color: #e53935;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Toastify Styles */
+.Toastify__toast--success {
+  background: #4caf50;
+}
+
+.Toastify__toast--error {
+  background: #f44336;
+}
