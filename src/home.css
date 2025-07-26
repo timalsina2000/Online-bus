@@ -6,11 +6,13 @@
 }
 
 .header {
-    display: flex;
+     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background-color: #0056b3;
     color: white;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
 }
 
 .logo {
@@ -216,18 +218,20 @@ p {
 
 .reviews-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
-    flex-wrap: wrap;
+    
 }
 
 .review-card {
+    display: flex;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 20px;
     width: 30%;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 .review-header {
